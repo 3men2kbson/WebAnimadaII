@@ -1,0 +1,311 @@
+@font-face {
+    font-family: ubuntuRegular;
+    src: url("Fuentes/Ubuntu-R.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: ubuntuBold;
+    src: url("Fuentes/Ubuntu-B.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: ubuntuBoldItalic;
+    src: url("Fuentes/Ubuntu-BI.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: ubuntuItalic;
+    src: url("Fuentes/Ubuntu-L.ttf") format("truetype");
+}
+
+body {
+    font-family: ubuntuRegular;
+    margin: auto;
+    padding: 0px;
+}
+
+#contenedor {
+    margin: auto;
+    width: 80%;
+    border: 1px solid black;
+    box-shadow: 0px 20px 35px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 20px 35px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 20px 35px rgba(0,0,0,0.5);
+    -o-box-shadow: 0px 20px 35px rgba(0,0,0,0.5);
+    border-radius: 15px;
+}
+
+header {
+    background: rgba(255,255,255,0.1);
+    height: 120px;
+}
+
+#logotpo {
+    font-size: 0px;
+    float: left;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+}
+
+#tipo {
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    font-size: 36px;
+    color: rgba(255,255,255,1);
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    font-family: ubuntuBoldItalic;
+    transform: translate(150px,0px);
+    -webkit-transform: translate(150px,0px);
+    -moz-transform: translate(150px,0px);
+    -o-transform: translate(150px,0px);
+}
+
+#logo{
+    float: left;
+    width: 20%;
+    text-align: center;
+    height: 100%;
+    vertical-align: middle;
+    padding: 0px;
+    margin: 0px;
+    animation: late 2s;
+    transform: scale(1,1);
+    animation: late 5s;
+    -webkit-animation: late 5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    /*transform: translate(0px,150px);
+    -webkit-transform: translate(0px,150px);*/
+}
+
+@keyframes late{
+    0%{transform: scale(1,1);}
+    45%{transform: scale(1,1);}
+    47%{transform: scale(0.98,0.98);}
+    50%{transform: scale(1.02,1.02);}
+    53%{transform: scale(0.98,0.98);}
+    55%{transform: scale(1,1);}
+    100%{transform: scale(1,1);}
+}
+
+@-webkit-keyframes late{
+    0%{transform: scale(1,1);}
+    45%{transform: scale(1,1);}
+    47%{transform: scale(0.98,0.98);}
+    50%{transform: scale(1.02,1.02);}
+    53%{transform: scale(0.98,0.98);}
+    55%{transform: scale(1,1);}
+    100%{transform: scale(1,1);}
+}
+
+
+
+#login {
+    padding: 10px;
+    float: right;
+    width: 50%;
+    text-align: right;
+    vertical-align: middle;
+}
+
+input {
+    padding: 5px;
+    font-family: ubuntuRegular;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+    border: 0px solid white;
+    border-radius: 5px;
+    background: rgba(0,0,0,0.1);
+    box-shadow: inset: 0px 0px 0px rgba(0,0,0,0.2);
+    -webkit-box-shadow: inset: 0px 0px 3px rgba(0,0,0,0.2);
+    -moz-box-shadow: inset: 0px 0px 3px rgba(0,0,0,0.2);
+    -o-box-shadow: inset: 0px 0px 3px rgba(0,0,0,0.2);
+    transition: box-shadow 1s, background 1s, border 1s;
+    -webkit-transition: box-shadow 1s, background 1s, border 1s;
+}
+
+input:hover{
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+    background: rgba(0,255,0,0.1);
+    border: 2px solid white;
+}
+
+#registrate {
+    color: rgba(0,0,0,1);
+    font-size: 10px;
+    text-shadow: 0px 0px 5px rgba(183,163,53,0);
+    animation: registrate 2s;
+    -webkit-animation: registrate 2s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0,0,0,1);
+}
+
+@keyframes registrate {
+    0%{text-shadow: 0px 0px 5px rgba(183,163,53,0);}
+    50%{text-shadow: 0px 0px 5px rgba(183,163,53,1);}
+    100%{text-shadow: 0px 0px 5px rgba(183,163,53,0);}
+}
+
+@-webkit-keyframes registrate {
+    0%{text-shadow: 0px 0px 5px rgba(183,163,53,0);}
+    50%{text-shadow: 0px 0px 5px rgba(183,163,53,1);}
+    100%{text-shadow: 0px 0px 5px rgba(183,163,53,0);}
+}
+
+#contenido{
+/*    background: rgba(0,255,0,0.1);*/
+}
+
+#presentacion {
+    padding: 0px;
+    margin: 0px;
+    background: rgba(0,0,0,0.1);
+    background: url(../a1.jpg) center center;
+    background-size: 800px 400px;
+    text-align: left;
+    width: 100%;
+    height: 0px;
+    box-shadow: inset 0px 0px 25px rgba(0,0,0,0.2);
+    -webkit-box-shadow: inset 0px 0px 25px rgba(0,0,0,0.2);
+    animation: esconder 15s;
+    -webkit-animation: esconder 15s;
+}
+
+@keyframes esconder {
+    0%{height: 100px; background-size: 800px 400px;}
+    50%{height: 100px;}
+    100%{height: 0px; background-size: 1600px 800px;}
+}
+
+@-webkit-keyframes esconder {
+    0%{height: 100px; background-size: 800px 400px;}
+    50%{height: 100px;}
+    100%{height: 0px; background-size: 1600px 800px;}
+}
+
+#animaciontexto1 {
+    position: absolute;
+    font-family: ubuntuBold;
+/*    color: rgba(255,255,255,0.8);*/
+    color: rgba(255,255,255,0);
+    text-shadow: 3px 3px 5px rgba(0,0,0,0);
+    font-size: 32px;
+    transform: translate(150px,0px);
+    -webkit-transform: translate(150px,0px);
+    animation: muevetexto1 5s;
+    -webkit-animation: muevetexto1 5s;
+}
+
+@keyframes muevetexto1 {
+    0%{color: rgba(255,255,255,0); transform: translate(-150px,0px); text-shadow: 3px 3px 5px rgba(0,0,0,0);}
+    25%{color: rgba(255,255,255,1); transform: translate(-20px,0px); text-shadow: 3px 3px 5px rgba(0,0,0,0.3);}
+    50%{color: rgba(255,255,255,1); text-shadow: 3px 3px 5px rgba(0,0,0,0.3);}
+    75%{color: rgba(255,255,255,1); transform: translate(20px,0px); text-shadow: 3px 3px 5px rgba(0,0,0,0.3);}
+    100%{color: rgba(255,255,255,0); transform: translate(150px,0px); text-shadow: 3px 3px 5px rgba(0,0,0,0);}
+}
+
+@-webkit-keyframes muevetexto1 {
+    0%{color: rgba(255,255,255,0); transform: translate(-150px,0px); text-shadow: 3px 3px 5px rgba(0,0,0,0);}
+    25%{color: rgba(255,255,255,1); transform: translate(-20px,0px); text-shadow: 3px 3px 5px rgba(0,0,0,0.3);}
+    50%{color: rgba(255,255,255,1); text-shadow: 3px 3px 5px rgba(0,0,0,0.3);}
+    75%{color: rgba(255,255,255,1); transform: translate(20px,0px); text-shadow: 3px 3px 5px rgba(0,0,0,0.3);}
+    100%{color: rgba(255,255,255,0); transform: translate(150px,0px); text-shadow: 3px 3px 5px rgba(0,0,0,0);}
+}
+
+#animaciontexto2 {
+    position: absolute;
+    font-family: ubuntuBold;
+/*    color: rgba(255,255,255,0.8);*/
+    color: rgba(255,255,255,0);
+    text-shadow: 3px 3px 5px rgba(0,0,0,0);
+    font-size: 32px;
+    transform: translate(150px,0px);
+    -webkit-transform: translate(150px,0px);
+    animation: muevetexto2 5s;
+    -webkit-animation: muevetexto2 5s;
+    animation-delay: 5s;
+    -webkit-animation-delay: 4s;
+}
+
+@keyframes muevetexto2 {
+    0%{color: rgba(255,255,255,0); transform: translate(-150px,0px); text-shadow: 3px 3px 5px rgba(0,0,0,0);}
+    25%{color: rgba(255,255,255,1); transform: translate(-20px,0px); text-shadow: 3px 3px 5px rgba(0,0,0,0.3);}
+    50%{color: rgba(255,255,255,1); text-shadow: 3px 3px 5px rgba(0,0,0,0.3);}
+    75%{color: rgba(255,255,255,1); transform: translate(20px,0px); text-shadow: 3px 3px 5px rgba(0,0,0,0.3);}
+    100%{color: rgba(255,255,255,0); transform: translate(150px,0px); text-shadow: 3px 3px 5px rgba(0,0,0,0);}
+}
+
+@-webkit-keyframes muevetexto2 {
+    0%{color: rgba(255,255,255,0); transform: translate(-150px,0px); text-shadow: 3px 3px 5px rgba(0,0,0,0);}
+    25%{color: rgba(255,255,255,1); transform: translate(-20px,0px); text-shadow: 3px 3px 5px rgba(0,0,0,0.3);}
+    50%{color: rgba(255,255,255,1); text-shadow: 3px 3px 5px rgba(0,0,0,0.3);}
+    75%{color: rgba(255,255,255,1); transform: translate(20px,0px); text-shadow: 3px 3px 5px rgba(0,0,0,0.3);}
+    100%{color: rgba(255,255,255,0); transform: translate(150px,0px); text-shadow: 3px 3px 5px rgba(0,0,0,0);}
+}
+
+#etiquetas {
+/*    background: rgba(0,0,0,0.1);*/
+    padding: 10px;
+}
+
+table {
+    width: 48%;
+    float: left;
+    margin: 1%;
+    border: 1px solid rgba(255,255,255,1);
+    border-radius: 10px;
+    background: rgba(212,184,131,0.1);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    transform: scale(1,1);
+    -webkit-transform: scale(1,1);
+    transition: transform 1s;
+    -webkit-transition: -webkit-transform 1s;
+}
+
+table:hover {
+    transform: scale(1.1,1.1);
+    -webkit-transform: scale(1.1,1.1);
+}
+
+table th {
+    width: 100%;
+    text-align: left;
+    font-family: ubuntuBold;
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 10px;
+    background: rgba(212,184,131,0.5);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+table td {
+    border: 0px solid white;
+    text-shadow: 2px 2px 4px rgbs(0,0,0,0.2);
+}
+
+#estrellas {
+    float: right;
+    font-size: 12px;
+    font-family: ubuntuRegular;
+}
+
+#trampa {
+    opacity: 0;
+    -webkit-opacity: 0;
+}
+
+footer{
+/*    background: rgba(0,0,255,0.1);*/
+    background: rgba(212,184,131,0.5);
+    text-align: center;
+    font-size: 12px;
+    font-family: ubuntuRegular;
+}
